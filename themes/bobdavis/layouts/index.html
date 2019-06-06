@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <main id="index">
+            {{- partial "index_hero.html" . -}}
+            {{- partial "index_overview.html" . -}}
+            {{- partial "index_photo-overview.html" . -}}
+            {{- partial "index_bike-shop.html" . -}}
+            {{- block "index_bikeshop" . }}{{- end }}
+            {{- partial "index_plants-coffee.html" . -}}
+            {{- partial "index_popups.html" . -}}
+            {{- partial "index_events.html" . -}}
+            {{- partial "index_teamdream-ringtail.html" . -}}
+            {{- partial "index_cubhouse-team.html" . -}}
+            
+        </main>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
